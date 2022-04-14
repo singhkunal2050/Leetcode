@@ -8,14 +8,12 @@ if(arr.length<3)
   let start = 0 
   let end = arr.length-1
   
- while (start < end) {
-        if (arr[start+1] > arr[start]) {
-          start++;
-        } else if (arr[end-1] > arr[end]) { 
-          end--;
-        } else {
-          break;
-        }
-      }
+  while(start<end){
+      if(arr[start]<arr[start+1])
+          start++
+      else if(arr[end]<arr[end-1])
+          end--
+      else break
+  }
   return start == end && start!=0 && end!=arr.length-1
 };
