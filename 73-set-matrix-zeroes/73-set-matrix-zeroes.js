@@ -7,6 +7,16 @@
 
 
 var setZeroes = function(matrix) {
+    
+    // r [-1,0,-1]
+    // c [-1,0,-1]
+
+  //      j 
+  //   [1,1,1]
+  // i [1,0,1]
+  //   [1,1,1]
+
+
     let rows = new Array(matrix.length).fill(-1)
     let cols = new Array(matrix[0].length).fill(-1)
     
