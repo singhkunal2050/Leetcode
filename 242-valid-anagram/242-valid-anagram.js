@@ -24,6 +24,7 @@ var isAnagram = function(s, t) {
     return true;
 };
 
+// sort and compare directly
 var isAnagram = function(s, t) {
     return Array.from(s).sort(function(a,b){
         return a.charCodeAt(0)-b.charCodeAt(0)
