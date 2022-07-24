@@ -25,11 +25,11 @@ var isAnagram = function(s, t) {
 };
 
 // sort and compare directly
-var isAnagram = function(s, t) {
-    return Array.from(s).sort(function(a,b){
-        return a.charCodeAt(0)-b.charCodeAt(0)
-    }).join('') == 
-    Array.from(t).sort(function(a,b){
-        return a.charCodeAt(0)-b.charCodeAt(0)
-    }).join('')
-};
+// var isAnagram = function(s, t) {
+//     return Array.from(s).sort(function(a,b){
+//         return a.charCodeAt(0)-b.charCodeAt(0)
+//     }).join('') == 
+//     Array.from(t).sort(function(a,b){
+//         return a.charCodeAt(0)-b.charCodeAt(0)
+//     }).join('')
+// };
