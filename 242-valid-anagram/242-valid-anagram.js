@@ -3,6 +3,8 @@
  * @param {string} t
  * @return {boolean}
  */
+
+// Iterate through the string and create a hashmap for both the string characters and then compare the hashmaps 
 var isAnagram = function(s, t) {
     if(s.length!=t.length)
         return false;
