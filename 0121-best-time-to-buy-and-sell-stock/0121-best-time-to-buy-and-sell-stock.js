@@ -8,10 +8,9 @@ var maxProfit = function(prices) {
     
     while(r < prices.length){
         let profit = prices[r] - prices[l]; 
+        maxProfit = Math.max(profit, maxProfit);
 
-        if(profit > 0){
-            maxProfit = Math.max(profit, maxProfit);
-        } else {
+        if(profit < 0){
             l = r; // found a low point so move left to the low point
         }
         r++;
