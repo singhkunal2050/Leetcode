@@ -28,6 +28,7 @@ var maxArea = function(height) {
         let currentArea = currentContainerHeight * currentContainerWidth;
         maxArea = Math.max(currentArea, maxArea);
         
+        // Move the pointer with the low height to Maximize Area
         if(height[l] <= height[r]){
             l++;
         } else {
