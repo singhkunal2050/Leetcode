@@ -18,10 +18,10 @@ var findMin = function(nums) {
     
     while(left <= right){
         
-        if(nums[left] < nums[right]){
-            min = Math.min(nums[left], min);
-            break;
-        }
+        // if(nums[left] < nums[right]){
+        //     min = Math.min(nums[left], min);
+        //     break;
+        // }
         
         let mid = Math.floor((left + right) / 2);
         min = Math.min(nums[left], min);
