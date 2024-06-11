@@ -1,3 +1,10 @@
+/* Divide and conquer, simply check range if the target is in the left chunk then move the right to mid otherwise depending on whether nums[left] is bigger or smaller move the left or right pointer by one, 
+At any iteration, if we find the nums[mid] | nums[left] | nums[right] equals target we return that index, if the while loop ended and we did not return anything we will return -1; 
+
+Note: Whenever left,right changes, recalculate mid at every iteration
+*/
+
+
 /**
  * @param {number[]} nums
  * @param {number} target
