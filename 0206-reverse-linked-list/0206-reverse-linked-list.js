@@ -9,6 +9,8 @@
  * @param {ListNode} head
  * @return {ListNode}
  */
+
+// Use prev and curr and keep updating the curr->next to prev, but before that store reference to curr->next 
 var reverseList = function(head) {
     let prev = null
     let curr = head; 
