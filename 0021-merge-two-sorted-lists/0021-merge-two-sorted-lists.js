@@ -10,6 +10,9 @@
  * @param {ListNode} list2
  * @return {ListNode}
  */
+
+// Use a dummy 2 node and compare both the list nodes until we reach to end and keep updating the dummy.next 
+// if any of the list exhausts, append the other one to the dummy and return the initial reference to the dummy list
 var mergeTwoLists = function(list1, list2) {
     let dummy = new ListNode();;
     let tail = dummy;
